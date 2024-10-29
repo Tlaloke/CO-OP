@@ -1,0 +1,33 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#caja{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 300px 50px;
+    grid-template-areas: "area1 area1"
+                         "area2 area3"
+                         "area4 area4";                   
+}
+
+header{
+    background-color: rgb(35, 138, 228);
+    grid-area: area1;
+}
+
+main{
+    background-color: rgb(35, 228, 67);
+    grid-area: area2;
+}
+
+aside{
+    background-color: rgb(70, 35, 228);
+    grid-area: area3;
+}
+
+footer{
+    background-color: rgb(177, 228, 35);
+    grid-area: area4;
+}
+
